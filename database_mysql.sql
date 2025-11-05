@@ -128,3 +128,4 @@ CREATE TABLE socios (
   CONSTRAINT fk_socio_qualificacao_representante_legal
     FOREIGN KEY (qualificacao_representante_legal) REFERENCES qualificacoes_socios(codigo)
 );
+-- --------------------------------------------------------
