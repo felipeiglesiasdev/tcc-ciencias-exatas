@@ -15,7 +15,8 @@ def create_connection():
             password=os.getenv("DB_PASSWORD", ""),
             database=os.getenv("DB_NAME", "cnpj"),
             charset="utf8mb4",
-            use_unicode=True
+            use_unicode=True,
+            allow_local_infile=True,
         )
 
         if connection.is_connected():
